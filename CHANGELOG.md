@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.21.0 — 2026-11-15
+
+**Infografik isometrik: varian gelap berlampu**
+- `assets/starter-explainer-iso-gelap.html`: latar gelap, batu bertekstur (ubin + bata), cahaya obor/anglo/
+  lentera additive dengan kedip deterministik, tinta dibalik, fokus + konteks ke abu gelap. Contoh: blok sel.
+- `references/iso-infografik.md`: bagian "Varian gelap berlampu".
+
 ## 1.20.0 — 2026-11-15
 
 **Gaya explainer ketujuh: infografik isometrik**

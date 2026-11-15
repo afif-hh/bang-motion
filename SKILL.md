@@ -5,14 +5,14 @@ license: MIT
 metadata:
   author: Bang Tutorial
   author_url: https://youtube.com/bangtutorial
-  version: "1.20.0"
+  version: "1.21.0"
   updated: "2026-09-14"
   homepage: https://github.com/bangtutorial/bang-motion
 ---
 
 # Bang Motion — motion graphic web yang bukan PPT
 
-**v1.20.0 · by [Bang Tutorial](https://youtube.com/bangtutorial) · MIT.** Riwayat perubahan di `CHANGELOG.md`;
+**v1.21.0 · by [Bang Tutorial](https://youtube.com/bangtutorial) · MIT.** Riwayat perubahan di `CHANGELOG.md`;
 cara pasang di `README.md`.
 
 Skill ini untuk AI coding agent apa pun (format Agent Skills terbuka).
@@ -537,6 +537,7 @@ dan buat layer dari belakang ke depan. Build 10 panggung ≈ 1 jam, 0 kredit.
 | `assets/starter-explainer-panggung.html` | EXPLAINER kartun panggung: sistem panggung + kamera per panggung, `J()` sendi, `character()` (kepala vektor atau raster), whoosh 96 px, contoh dua panggung |
 | `references/iso-infografik.md` | INFOGRAFIK ISOMETRIK (gaya 7): proyeksi 30°, tiga nada per sisi, perabot tinta, papan berstrata, Isotype, cutaway, fokus + konteks, menu kamera log-zoom, jebakan painter |
 | `assets/starter-explainer-iso.html` | EXPLAINER infografik isometrik: engine Canvas 2D inline (MIT, dari Lemo-Opuscar), state `S` di-tween GSAP → `render()` deterministik, contoh papan + cutaway + pin + Isotype |
+| `assets/starter-explainer-iso-gelap.html` | Varian GELAP BERLAMPU gaya 7: latar hampir hitam, batu dingin bertekstur (ubin, bata), cahaya obor additive berkedip deterministik, tinta dibalik; contoh blok sel penjara |
 | `scripts/kepala-ekspresi.py` | kepala hasil generate → varian senang/cemas/kaget + kedip, dibuat lokal (deteksi pupil & mulut) |
 | `references/ae-bridge-higgsfield.md` | BRIDGE: membangun kartun panggung langsung di AE lewat MCP Higgsfield — batas bridge, jebakan (null 960,540; parent ke CAM berkeyframe; reorder rusak), arsitektur CAM per panggung, rig native, relay contact sheet, penyerahan |
 | `scripts/ae/bridge/aset-svg.py`, `svg2png.cjs`, `rig-tokoh.py` | BRIDGE: aset ilustrasi dari kode → SVG + manifest → PNG 2× (puppeteer); generator ±90 op `ae_batch` untuk satu karakter bersendi |

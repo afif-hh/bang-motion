@@ -152,6 +152,24 @@ Teks yang digambar di kanvas tidak terbaca oleh pemeriksa DOM. Bila proyekmu
 memeriksa teks lewat DOM (mis. safe zone), proyeksikan titik pin dengan
 `iso.P()` dan taruh teksnya sebagai elemen HTML di atas kanvas.
 
+## Varian gelap berlampu
+
+Starter: `assets/starter-explainer-iso-gelap.html`. Hukum gaya tetap sama (proyeksi tetap, tiga nada,
+perabot tinta, Isotype); yang berganti kulitnya. Cocok untuk penjara, bawah tanah, tambang, ruang
+mesin, kota malam, atau topik kelam.
+
+- **Latar hampir hitam** dengan gradien radial pelan + debu hangat melayang (dari `hash`), vinyet.
+- **Batu dingin bertekstur**: ubin lantai satu per satu dengan nada sedikit berbeda (`hash`), nat
+  bata digambar di dalam giliran kotaknya lewat `decal` + `line3(..., {now:true})` sehingga urutan
+  painter tetap benar. Warna untuk engine selalu hex; `rgba()` merusak `rgb()` (dinding jadi hijau).
+- **Cahaya = lapisan additive setelah `flush()`**: tiap obor/anglo/lentera satu gradien radial
+  elips (rasio ≈ .62, mengikuti lantai isometrik) dengan `globalCompositeOperation='lighter'`.
+  Kedip = jumlah tiga sinus dari `t` — deterministik. Api menyala satu per satu = "akumulasi".
+- **Tinta dibalik**: `PAL.ink` terang, `PAL.paper` gelap, `haloText` di-override dengan halo gelap.
+- **Fokus + konteks memudar ke abu GELAP**: `iso.col` di-override; target krem bawaan membuat
+  close-up pucat. Cahaya non-subjek ikut diredupkan; subjek mendapat satu cahaya tambahan.
+- Lentera yang dibawa tokoh adalah cahaya yang bergerak: subjek terlacak yang paling murah.
+
 ## Variasi (jauhi contoh starter)
 
 - Struktur: satu gedung lantai demi lantai (turun menembus cutaway); dua
