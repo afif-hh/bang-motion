@@ -2,6 +2,8 @@
 
 Untuk kartun edukasi flat berkarakter (gaya 6, **kartun panggung**: satu panggung
 per adegan, rig sendi, nol caption), baca [kartun-panggung.md](kartun-panggung.md).
+Untuk sistem/proses/angka sebagai diorama (gaya 7, **infografik isometrik**: papan
+isometrik bernada tiga, cutaway, Isotype), baca [iso-infografik.md](iso-infografik.md).
 Jumlah kalimat tidak menentukan jumlah shot; lebih banyak gerak kamera juga
 bukan otomatis lebih menarik. Bagian resep kolase di bawah adalah opsi, bukan
 pola wajib bagi semua explainer.
@@ -32,7 +34,7 @@ Lewati bagian yang sudah disebut user; bila ada video referensi, gaya
 diambil dari sana (ritmenya — lihat SKILL.md Hukum #3).
 
 **Gaya** (sertakan satu baris rekomendasi: sejarah → 4 atau 1; berita → 2;
-produk → 3; gerak/rute → 5; sains/edukasi berkarakter → 6; topik ringan → 1):
+produk → 3; gerak/rute → 5; sains/edukasi berkarakter → 6; topik ringan → 1; sistem/proses/rantai pasok/data → 7):
 
 | # | Gaya | Rasanya | Cocok untuk | Aset |
 |---|---|---|---|---|
@@ -42,6 +44,7 @@ produk → 3; gerak/rute → 5; sains/edukasi berkarakter → 6; topik ringan �
 | 4 | Sketsa vintage | kertas sepia, ukiran/etsa, serif klasik, anotasi karat | sejarah, biografi, penemuan | ilustrasi gaya ukiran digenerate |
 | 5 | Aksi kontinu (vektor) | dunia mengalir, satu subjek, angka di dalam dunia, ganti sudut | kecepatan, rute, transportasi, olahraga, proses | 100 % SVG digambar, tanpa generate |
 | 6 | Kartun panggung | flat cerah, satu panggung per adegan, tokoh bersendi beraksi, mesin/air/tanaman hidup, tanpa caption | edukasi sains/sosial berkarakter, proses & dampak, cerita | tubuh & dunia vektor; kepala digenerate → ekspresi lokal |
+| 7 | Infografik isometrik | diorama isometrik di papan melayang, balok datar bernada tiga, pin bertinta, angka dari ikon, cutaway | sistem & proses, rantai pasok, cara kerja infrastruktur, laporan angka | 100 % digambar kode (Canvas 2D), tanpa generate |
 
 **Tiga hal lain dalam pertanyaan yang sama:**
 
@@ -83,12 +86,14 @@ Naskah yang sama disimpan sebagai `vo-script.md`. Jangan hanya menulis
 Explainer SELALU dimulai dari starter gayanya (folder `assets/`):
 `starter-explainer-kartun.html`, `starter-explainer-jurnalisme.html`,
 `starter-explainer-katalog.html`, `starter-explainer-sketsa.html`, atau
-`starter-explainer.html` untuk aksi kontinu. Kelimanya satu rig; yang beda
+`starter-explainer.html` untuk aksi kontinu (gaya 6 dan 7 punya starter dan
+rig sendiri: `starter-explainer-panggung.html`, `starter-explainer-iso.html`). Kelimanya satu rig; yang beda
 hanya PERMUKAAN (tekstur latar, jenis aset, font, warna). Dua mode gerak:
 
 | Mode | Dunia | Gerak utama | Gaya yang memakainya |
 |---|---|---|---|
 | ALIRAN | strip parallax mengalir dari profil kecepatan, subjek diam di frame, objek dunia melintas | dunia bergerak | aksi kontinu (vektor) |
+| DIORAMA | satu papan isometrik di kanvas, proyeksi tak pernah berputar | kamera geser + zoom log; benda dipotong, diisi, dihitung | infografik isometrik |
 | KOLASE | kertas/foto/putih diam berisi cutout & foto, boleh lebih besar dari frame | kamera: `into` → `settle` → `look` → `home` lalu DIAM; aset `fly` dan tetap bergoyang | kartun kolase, jurnalisme foto, katalog putih, sketsa vintage |
 
 Keduanya boleh dicampur dalam satu video (mis. kolase untuk sejarah, lalu

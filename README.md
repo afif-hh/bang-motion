@@ -7,7 +7,7 @@
 **An agent skill that turns your AI coding agent into a motion designer.**<br>
 Openers, promos, product demos, kinetic typography, and explainers — built as a single `index.html` that plays like video, not like slides.
 
-[![Version](https://img.shields.io/badge/version-1.19.0-2f6fd6?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.20.0-2f6fd6?style=flat-square)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-3fa34d?style=flat-square)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-1c2a4a?style=flat-square)](#install)
 [![Works with](https://img.shields.io/badge/works%20with-Claude%20Code%20%C2%B7%20Codex%20%C2%B7%20Gemini%20CLI%20%C2%B7%20Cursor-7a5af5?style=flat-square)](#install)
@@ -34,7 +34,7 @@ It also stops every project from looking the same. The look is **derived from yo
 | 🖥️ **Product & SaaS demos** | UI assembled and used on screen, camera following the clicks | 20–60 s |
 | 🔤 **Kinetic typography** | lyric-style statements, event announcements, manifestos | 10–30 s |
 | 📺 **Bumpers, idents, channel intros** | short brand moments that loop | 3–10 s |
-| 🧭 **Explainers** | six explainer styles, optional voice-over sync, 16:9 or 9:16 | 30–120 s |
+| 🧭 **Explainers** | seven explainer styles, optional voice-over sync, 16:9 or 9:16 | 30–120 s |
 | 🎥 **Video layers** | your own or generated clips placed like footage — inside devices, frames, and masks, locked to the timeline | — |
 | 🎞️ **After Effects builds** | cartoon explainers built directly inside AE through the Higgsfield MCP bridge | — |
 
@@ -121,7 +121,7 @@ Each concept ships as principles and a menu of openings, transitions, and ending
 </details>
 
 <details>
-<summary><b>6 explainer styles</b> — each with its own starter</summary>
+<summary><b>7 explainer styles</b> — each with its own starter</summary>
 
 | Style | Look | Best for |
 |---|---|---|
@@ -131,6 +131,7 @@ Each concept ships as principles and a menu of openings, transitions, and ending
 | White catalog | white grid, photo cutouts, mixed typography, scribbles | products, brands |
 | Vintage sketch | sepia paper, engraving art, classic serifs, rust annotations | history, biography |
 | Cartoon stage | one stage per scene, jointed characters, no captions | education with characters |
+| Isometric infographic | isometric diorama, three-tone flat blocks, ink pins, Isotype numbers, cutaways | systems, processes, supply chains |
 
 </details>
 
@@ -259,6 +260,7 @@ references/
   techniques.md                  typography, camera, transitions, backgrounds, render families
   explainer.md                   explainer styles, camera recipes, VO re-timing
   kartun-panggung.md             cartoon stage explainers
+  iso-infografik.md              isometric infographic explainers
   architecture.md                stage, camera rig, determinism, export
   ae-bridge-higgsfield.md        building inside After Effects via the MCP bridge
   roadmap.md                     where the skill is heading

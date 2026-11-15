@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.20.0 — 2026-11-15
+
+**Gaya explainer ketujuh: infografik isometrik**
+- `references/iso-infografik.md`: diorama isometrik bernada tiga, perabot infografik bertinta,
+  Isotype, cutaway, fokus + konteks, menu kamera log-zoom, jebakan painter (papan di `layer:0`).
+- `assets/starter-explainer-iso.html`: engine Canvas 2D inline (MIT, diadaptasi dari Lemo-Opuscar
+  iso-infographic), state di-tween GSAP dan digambar ulang dari `tl.time()`.
+- Tabel Langkah nol, tabel mode, Larangan #6, checklist, dan Isi paket diperbarui.
+
 ## 1.19.0 — 2026-09-15
 
 **Ukuran shot — kamera ke elemen**
